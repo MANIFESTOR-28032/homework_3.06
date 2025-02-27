@@ -4,7 +4,7 @@ import 'package:dio/dio.dart';
 import 'secure_storsge.dart';
 
 class ApiClient {
-  final Dio dio = Dio(BaseOptions(baseUrl: "http://192.168.11.5:8888/api/v1"));
+  final Dio dio = Dio(BaseOptions(baseUrl: "http://172.30.48.1:8888/api/v1"));
 
   Future<String?> login(String login, String password) async {
     var response = await dio.post(
